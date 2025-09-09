@@ -30,3 +30,5 @@ foreach (var m in movies)
 {
     Console.WriteLine(m);
 }
+
+Console.WriteLine("Worst rating: " + movies.Min(x => x.Rating));
