@@ -16,3 +16,10 @@ foreach (var m in movies)
 {
     Console.WriteLine(m);
 }
+
+Console.WriteLine("Movie list sort by name");
+movies = movies.OrderBy(x => x.Title).ToList();
+foreach (var m in movies)
+{
+    Console.WriteLine(m);
+}
