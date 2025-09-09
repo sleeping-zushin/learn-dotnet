@@ -11,6 +11,7 @@ List<Movie> movies = new List<Movie>
             new Movie { Title = "Forrest Gump", Genre = "Drama", Year = 1994, Rating = 8.8 }
         };
 
+Console.WriteLine("Movie List");
 foreach (var m in movies)
 {
     Console.WriteLine(m);
