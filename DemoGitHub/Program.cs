@@ -24,9 +24,9 @@ foreach (var m in movies)
     Console.WriteLine(m);
 }
 
-Console.WriteLine("=== Movie List sort by category ===");
-movies = movies.OrderBy(x => x.Genre).ToList();
-foreach (var m in movies)
-{
-    Console.WriteLine(m);
-}
+var newestMovie = movies.OrderByDescending(x => x.Year).FirstOrDefault();
+Console.WriteLine("\n=== Newest Movie ===");
+Console.WriteLine(newestMovie);
+
+Console.WriteLine("Hello tui la Minh Quan");
+Console.WriteLine("d");
