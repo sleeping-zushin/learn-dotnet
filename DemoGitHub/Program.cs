@@ -39,3 +39,4 @@ foreach (var m in movies)
 }
 
 Console.WriteLine("Top rating: " + movies.Max(x => x.Rating));
+Console.WriteLine("The oldest year of film: " + movies.Min(x => x.Year));
