@@ -23,3 +23,10 @@ foreach (var m in movies)
 {
     Console.WriteLine(m);
 }
+
+Console.WriteLine("=== Movie List sort by category ===");
+movies = movies.OrderBy(x => x.Genre).ToList();
+foreach (var m in movies)
+{
+    Console.WriteLine(m);
+}
