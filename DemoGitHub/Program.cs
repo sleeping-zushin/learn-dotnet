@@ -11,7 +11,21 @@ List<Movie> movies = new List<Movie>
             new Movie { Title = "Forrest Gump", Genre = "Drama", Year = 1994, Rating = 8.8 }
         };
 
-Console.WriteLine("Movie List");
+Console.WriteLine("=== Movie List ===");
+foreach (var m in movies)
+{
+    Console.WriteLine(m);
+}
+
+Console.WriteLine("=== Movie List sort by name ===");
+movies = movies.OrderBy(x => x.Title).ToList();
+foreach (var m in movies)
+{
+    Console.WriteLine(m);
+}
+
+Console.WriteLine("=== Movie List sort by category ===");
+movies = movies.OrderBy(x => x.Genre).ToList();
 foreach (var m in movies)
 {
     Console.WriteLine(m);
@@ -23,3 +37,5 @@ foreach (var m in movies)
 {
     Console.WriteLine(m);
 }
+
+Console.WriteLine("Top rating: " + movies.Max(x => x.Rating));
