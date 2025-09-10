@@ -30,3 +30,6 @@ foreach (var m in movies)
 {
     Console.WriteLine(m);
 }
+
+
+Console.WriteLine("Top rating: " + movies.Max(x => x.Rating));
